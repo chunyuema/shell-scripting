@@ -24,5 +24,6 @@ echo delete matching longest substring from end: ${str1%%a*c}
 
 # replace
 str1=abcabc
+echo origin str1: $str1
 echo replace first occurence: ${str1/abc/def}
-echo replace all occurences: ${str1//abc/def}
+echo replace all occurences: ${str1//abc/ABCD}
