@@ -14,6 +14,13 @@ echo get substring: ${name:2:5}
 # delete
 echo delete the first 'chun': ${name#chun}
 echo after deletion $name
+echo "=== user pattern matching for delete ===="
+str1=abcABC123abc
+echo original str1: $str1
+echo delete matching shortest subtring from start: ${str1#a*c}
+echo delete matching longest substring from start: ${str1##a*c}
+echo delete matching shortest subtring from end: ${str1%a*c}
+echo delete matching longest substring from end: ${str1%%a*c}
 
 # replace
 str1=abcabc
